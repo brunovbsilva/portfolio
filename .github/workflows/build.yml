@@ -18,10 +18,16 @@ jobs:
           node-version: lts/*
           cache: 'npm'
 
-      - name: 'npm install'
-        run: |
-          npm install -g @angular/cli@15.2.0
-          npm install
+      - name: 'install angular'
+        run: npm install -g @angular/cli@15.2.0
+
+      - name: 'install dependencies'
+        run: npm install
 
       - name: 'build angular' 
-        run: ng build --output-path docs --base-href /portifolio/
+        run: ng build --base-href /portifolio/
+
+      - name: 'Deploy 🚀'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist/portifolio
