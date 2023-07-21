@@ -1,0 +1,32 @@
+name: BUILD
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout ✅
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - name: Setup 🏗
+        uses: actions/setup-node@v2
+        with:
+          node-version: lts/*
+          cache: 'npm'
+
+      - script: |
+          npm install -g @angular/cli@14.0.6
+          npm install
+        displayName: 'npm install'
+
+      - script: ng build --output-path docs --base-href /portifolio/
+        displayName: 'build angular'
+      
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist/ngx-toggle-example
