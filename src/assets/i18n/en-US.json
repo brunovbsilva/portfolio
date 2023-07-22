@@ -1,0 +1,14 @@
+{
+  "layout": {
+    "header": {
+      "title": "Bruno Silva's portifolio",
+      "anchor": {
+        "apresentation": "Apresentation",
+        "hard-skills": "Hard Skills",
+        "project": "Project",
+        "experience": "Experience",
+        "contact": "Contact"
+      }
+    }
+  }
+}
