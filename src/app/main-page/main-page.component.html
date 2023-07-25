@@ -1,7 +1,11 @@
 <div class="main-content">
   <app-apresentation></app-apresentation>
   <app-hard-skills></app-hard-skills>
-  <app-projects></app-projects>
+  <app-projects>
+    <app-project *ngFor="let project of projects" [model]="project">
+      <app-project-button-link *ngFor="let button of project.buttons" [model]="button"></app-project-button-link>
+    </app-project>
+  </app-projects>
   <app-experience></app-experience>
   <app-contact></app-contact>
 </div>

@@ -13,12 +13,14 @@ import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import { MaterialProviders } from './material/providers';
 import { ApresentationComponent } from './main-page/apresentation/apresentation.component';
-import { ProjectsComponent } from './main-page/projects/projects.component';
 import { ExperienceComponent } from './main-page/experience/experience.component';
 import { HardSkillsComponent } from './main-page/hard-skills/hard-skills.component';
 import { ContactComponent } from './main-page/contact/contact.component';
 import { SkillComponent } from './main-page/hard-skills/skill/skill.component';
 import { DescriptionComponent } from './main-page/hard-skills/description/description.component';
+import { ProjectsComponent } from './main-page/projects/projects.component';
+import { ProjectComponent } from './main-page/projects/project/project.component';
+import { ProjectButtonLinkComponent } from './main-page/projects/project-button-link/project-button-link.component';
 
 registerLocaleData(localePt);
 
@@ -31,12 +33,14 @@ function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     AppComponent,
     MainPageComponent,
     ApresentationComponent,
-    ProjectsComponent,
     ExperienceComponent,
     HardSkillsComponent,
     ContactComponent,
     SkillComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    ProjectsComponent,
+    ProjectComponent,
+    ProjectButtonLinkComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +55,7 @@ function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
         useFactory: HttpLoaderFactory,
         deps: [ HttpClient ],
       },
-    }),
+    })
   ],
   exports: [ MaterialModule ],
   providers: [

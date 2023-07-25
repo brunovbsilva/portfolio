@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ContentChildren, QueryList } from '@angular/core';
+import { ProjectComponent } from './project/project.component';
 
 @Component({
   selector: 'app-projects',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
+  @ContentChildren(ProjectComponent) projects?: QueryList<ProjectComponent>;
 
+  constructor() {}
 }

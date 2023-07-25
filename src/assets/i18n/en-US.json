@@ -10,5 +10,8 @@
         "contact": "Contact"
       }
     }
+  },
+  "projects": {
+    "title": "Projects"
   }
 }

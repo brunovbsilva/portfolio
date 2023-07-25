@@ -1,0 +1,8 @@
+<mat-card class="card">
+  <h1>{{model.name}}</h1>
+  <p>{{model.description}}</p>
+  <img [src]="model.imagePath"/>
+  <div class="buttons">
+    <ng-content></ng-content>
+  </div>
+</mat-card>
