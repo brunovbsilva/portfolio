@@ -1,0 +1,6 @@
+@use '@angular/material' as mat;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700;900&display=swap');
+
+$my-font-name: 'Noto Sans';
+$my-typography: mat.define-typography-config($my-font-name);
+@include mat.typography-hierarchy($my-typography);

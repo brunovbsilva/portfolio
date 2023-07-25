@@ -1,0 +1,25 @@
+@use '@angular/material' as mat;
+@import 'typography';
+@import 'palette';
+
+@include mat.core();
+
+$my-theme: mat.define-light-theme((
+    color: (
+        primary: mat.define-palette($my-primary, 500, A100, A400, A400),
+        accent: mat.define-palette($my-accent, A200, A100, A400, A400),
+    ),
+    typography: mat.define-typography-config($my-font-name),
+    density: 0,
+));
+
+@include mat.all-component-themes($my-theme);
+
+.content {
+    background-color: map_get($my-primary, 50) !important;
+}
+
+mat-card {
+    background-color: map_get($my-primary, 100) !important;
+}
+
