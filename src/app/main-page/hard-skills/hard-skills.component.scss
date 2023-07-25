@@ -1,0 +1,32 @@
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0 auto;
+  .description {
+    width: 50%;
+  }
+  .skills {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    .skill {
+      width: 33%;
+      margin: 0
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :host {
+    .description {
+      width: 100%;
+    }
+    .skills {
+      width: 100%;
+    }
+  }
+}

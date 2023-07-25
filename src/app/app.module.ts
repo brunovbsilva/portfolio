@@ -17,6 +17,8 @@ import { ProjectsComponent } from './main-page/projects/projects.component';
 import { ExperienceComponent } from './main-page/experience/experience.component';
 import { HardSkillsComponent } from './main-page/hard-skills/hard-skills.component';
 import { ContactComponent } from './main-page/contact/contact.component';
+import { SkillComponent } from './main-page/hard-skills/skill/skill.component';
+import { DescriptionComponent } from './main-page/hard-skills/description/description.component';
 
 registerLocaleData(localePt);
 
@@ -32,7 +34,9 @@ function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     ProjectsComponent,
     ExperienceComponent,
     HardSkillsComponent,
-    ContactComponent
+    ContactComponent,
+    SkillComponent,
+    DescriptionComponent
   ],
   imports: [
     BrowserModule,

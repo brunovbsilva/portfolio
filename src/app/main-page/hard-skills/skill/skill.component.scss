@@ -1,0 +1,28 @@
+.skill {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  .spinner {
+    position: absolute;
+    width: 150%;
+    left: -25%;
+    display: none;
+  }
+  &:hover {
+    .spinner {
+      display: block;
+    }
+  }
+  .card {
+    margin: 3px;
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+
+}

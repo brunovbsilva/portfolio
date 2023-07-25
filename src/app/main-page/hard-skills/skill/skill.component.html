@@ -1,0 +1,6 @@
+<div class="skill" (mouseenter)="spinnerState='final'" (mouseleave)="spinnerState='initial'">
+  <div class="spinner" [@spinner]="spinnerState"></div>
+  <mat-card class="card" [matTooltip]="skill.name" [matTooltipDisabled]="skill.name == ''">
+    <img [src]="'assets/svgs/'+skill.icon+'.svg'"/>
+  </mat-card>
+</div>
