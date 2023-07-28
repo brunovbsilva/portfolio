@@ -1,7 +1,25 @@
 {
-  "layout": {
-    "header": {
-      "title": "Meu App"
+  "header": {
+    "project": "Portifólio Bruno Silva",
+    "buttons": {
+      "apresentation": "Apresentação",
+      "skills": "Habilidades",
+      "projects": "Projetos",
+      "experience": "Experiência"
     }
+  },
+
+  "apresentation": {
+    "greatings": "Olá 👋 eu sou Bruno",
+    "job-first-line": "Web",
+    "job-second-line": "Developer",
+    "description": "Possuo 3 anos de experiência profissional em desenvolvimento web fullstack. Trabalhando principalmente com .NET e Angular. Me pego várias vezes buscando sobre tecnologias novas sabendo que sempre há várias maneiras de se fazer algo. Estou pronto para contribuir com soluções inovadoras e buscar a excelência técnica.",
+    "tooltips": {
+      "linkedin": "Linkedin",
+      "github": "Github",
+      "discord": "Copiar tag do Discord",
+      "email": "copiar email"
+    },
+    "snackbar-message": "Copiado para área de transferência!"
   }
 }

@@ -1,17 +1,27 @@
 {
-  "layout": {
-    "header": {
-      "title": "Bruno Silva's portifolio",
-      "anchor": {
-        "apresentation": "Apresentation",
-        "hard-skills": "Hard Skills",
-        "project": "Project",
-        "experience": "Experience",
-        "contact": "Contact"
-      }
+  "header": {
+    "project": "Bruno Silva's Portfolio",
+    "buttons": {
+      "apresentation": "Apresentation",
+      "skills": "Skills",
+      "projects": "Projects",
+      "experience": "Experience"
     }
   },
-  "projects": {
-    "title": "Projects"
+
+  "apresentation": {
+    "greatings": "Hello 👋 I'm Bruno",
+    "job-first-line": "Web",
+    "job-second-line": "Developer",
+    "description": "I have 3 years of professional experience in fullstack web development. Working mainly with .NET and Angular. I often find myself looking for new technologies knowing that there are always several ways to do something. I am ready to contribute with innovative solutions and seek technical excellence.",
+    "tooltips": {
+      "linkedin": "Linkedin",
+      "github": "Github",
+      "discord": "Copy Discord tag",
+      "email": "Copy email"
+    },
+    "snackbar-message": "Copied to clipboard!"
   }
 }
+
+  
