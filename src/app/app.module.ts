@@ -15,12 +15,14 @@ import { MaterialProviders } from './material/providers';
 import { ApresentationComponent } from './main-page/apresentation/apresentation.component';
 import { ExperienceComponent } from './main-page/experience/experience.component';
 import { HardSkillsComponent } from './main-page/hard-skills/hard-skills.component';
-import { ContactComponent } from './main-page/contact/contact.component';
 import { SkillComponent } from './main-page/hard-skills/skill/skill.component';
 import { DescriptionComponent } from './main-page/hard-skills/description/description.component';
 import { ProjectsComponent } from './main-page/projects/projects.component';
 import { ProjectComponent } from './main-page/projects/project/project.component';
 import { ProjectButtonLinkComponent } from './main-page/projects/project-button-link/project-button-link.component';
+import { JobComponent } from './main-page/experience/job/job.component';
+import { AnchorDirective } from './directive/anchor.directive';
+import { ApresentationButtonComponent } from './main-page/apresentation/apresentation-button/apresentation-button.component';
 
 registerLocaleData(localePt);
 
@@ -35,12 +37,14 @@ function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     ApresentationComponent,
     ExperienceComponent,
     HardSkillsComponent,
-    ContactComponent,
     SkillComponent,
     DescriptionComponent,
     ProjectsComponent,
     ProjectComponent,
-    ProjectButtonLinkComponent
+    ProjectButtonLinkComponent,
+    JobComponent,
+    AnchorDirective,
+    ApresentationButtonComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +61,6 @@ function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
       },
     })
   ],
-  exports: [ MaterialModule ],
   providers: [
     MaterialProviders,
     { provide: LOCALE_ID, useValue: 'pt' }

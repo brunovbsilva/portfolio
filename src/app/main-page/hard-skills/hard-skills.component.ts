@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { Skill } from './skill/model/skill.model';
+import { Component, ContentChild, ContentChildren, QueryList } from '@angular/core';
+import { Skill } from './model/skill.model';
+import { DescriptionComponent } from './description/description.component';
+import { SkillComponent } from './skill/skill.component';
 
 @Component({
   selector: 'app-hard-skills',
@@ -7,15 +9,6 @@ import { Skill } from './skill/model/skill.model';
   styleUrls: ['./hard-skills.component.scss']
 })
 export class HardSkillsComponent {
-  skills: Skill[] = [
-    { name: 'Angular', icon: 'angular' },
-    { name: 'Azure', icon: 'azure' },
-    { name: 'Git', icon: 'git' },
-    { name: 'C#', icon: 'csharp' },
-    { name: 'Ionic', icon: 'ionic' },
-    { name: 'SQL Server', icon: 'sql-server' },
-    { name: 'mock', icon: 'test' },
-    { name: 'mock', icon: 'test' },
-    { name: 'mock', icon: 'test' }
-  ]
+  @ContentChild(DescriptionComponent) description!: DescriptionComponent;
+  @ContentChildren(SkillComponent) skills!: QueryList<SkillComponent>;
 }

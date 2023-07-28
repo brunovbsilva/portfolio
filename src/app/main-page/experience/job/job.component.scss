@@ -2,12 +2,6 @@
   width: 33.33%;
   padding: 0.5rem;
 }
-.card {
-  padding: 1rem;
-  .buttons {
-    display: flex;
-  }
-}
 
 @media screen and (max-width: 1212px) {
   :host {
@@ -20,3 +14,4 @@
     width: 100%;
   }
 }
+

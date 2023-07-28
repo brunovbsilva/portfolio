@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ContentChildren, QueryList } from '@angular/core';
+import { JobComponent } from './job/job.component';
 
 @Component({
   selector: 'app-experience',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent {
-
+  @ContentChildren(JobComponent) jobs?: QueryList<JobComponent>;
 }

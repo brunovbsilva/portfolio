@@ -1,3 +1,22 @@
 <div class="apresentation">
-  <h1>apresentation</h1>
+  <div class="greatings">
+    <ng-content select=".greatings"></ng-content>
+  </div>
+  <div class="middle">
+    <div class="first-line">
+      <ng-content select=".job-first-line"></ng-content>
+      <div class="buttons">
+        <ng-content select="app-apresentation-button"></ng-content>
+      </div>
+    </div>
+    <div class="second-line">
+      <ng-content select=".job-second-line"></ng-content>
+    </div>
+    
+  </div>
+  <div class="bottom">
+    <div class="description">
+      <ng-content select=".description-text"></ng-content>
+    </div>
+  </div>
 </div>

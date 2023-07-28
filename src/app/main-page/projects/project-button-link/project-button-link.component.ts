@@ -8,4 +8,8 @@ import { ProjectButtonLink } from '../model/project.model';
 })
 export class ProjectButtonLinkComponent {
   @Input() model!: ProjectButtonLink;
+
+  onClick(link: string) {
+    window.open(link, '_blank');
+  }
 }

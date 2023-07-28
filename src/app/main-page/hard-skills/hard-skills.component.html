@@ -1,4 +1,6 @@
-<app-description class="description"></app-description>
+<div class="description">
+  <ng-content select="app-description"></ng-content>
+</div>
 <div class="skills">
-  <app-skill *ngFor="let skill of skills" [skill]="skill" class="skill"></app-skill>
+  <ng-content select="app-skill"></ng-content>
 </div>

@@ -1,7 +1,11 @@
+:host {
+  width: 33.33%;
+  padding: 0.25rem;
+}
 .skill {
   position: relative;
   border-radius: 5px;
-  padding: 3px;
+  padding: 0.25rem;
   overflow: hidden;
   cursor: pointer;
   .spinner {
@@ -16,8 +20,7 @@
     }
   }
   .card {
-    padding: 5px;
-    width: 100%;
+    padding: 1rem;
     aspect-ratio: 1/1;
   }
 

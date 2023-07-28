@@ -1,5 +1,77 @@
 .apresentation {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  .greatings {
+    font-size: 2vi;
+    line-height: 2vi;
+    font-weight: 700;
+  }
+  .middle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .first-line, .second-line {
+      position: relative;
+      font-size: 15vi;
+      line-height: 13vi;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      .buttons {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex: 1 1 auto;
+      }
+    }
+    
+  }
+  .bottom {
+    display: flex;
+    justify-content: end;
+    .description {
+      width: 60%;
+      font-size: 2vi;
+      line-height: 2vi;
+      margin: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .apresentation {
+    .greatings {
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+    }
+    .middle {
+      .first-line, .second-line {
+        font-size: 14rem;
+        line-height: 11rem;
+      }
+    }
+    .bottom {
+      .description {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+      }
+    };
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .apresentation {
+    .greatings {
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+    .bottom {
+      .description {
+        width: 80%;
+        font-size: 1rem;
+        line-height: 1rem;
+      }
+    }
+  }
 }

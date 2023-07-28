@@ -3,6 +3,6 @@
   <p>{{model.description}}</p>
   <img [src]="model.imagePath"/>
   <div class="buttons">
-    <ng-content></ng-content>
+    <ng-content select="app-project-button-link"></ng-content>
   </div>
 </mat-card>
