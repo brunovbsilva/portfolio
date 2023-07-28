@@ -1,11 +1,45 @@
-<div class="main-content">
-  <app-apresentation></app-apresentation>
-  <app-hard-skills></app-hard-skills>
-  <app-projects>
+<div class="main-content mat-app-background">
+
+  <header class="header">
+    <h2>{{ 'header.project' | translate }}</h2>
+
+    <div class="spacer"></div>
+
+    <button mat-button appAnchor goTo="apresentation" class="header-button">{{ 'header.buttons.apresentation' | translate }}</button>
+    <button mat-button appAnchor goTo="skills" class="header-button">{{ 'header.buttons.skills' | translate }}</button>
+    <button mat-button appAnchor goTo="projects" class="header-button">{{ 'header.buttons.projects' | translate }}</button>
+    <button mat-button appAnchor goTo="experience" class="header-button">{{ 'header.buttons.experience' | translate }}</button>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="menu"><mat-icon>more_vert</mat-icon></button>
+  </header>
+
+  <app-apresentation id="apresentation">
+    <span class="greatings">{{ 'apresentation.greatings' | translate | uppercase }}</span>
+    <span class="job-first-line">{{ 'apresentation.job-first-line' | translate | uppercase }}</span>
+    <span class="job-second-line">{{ 'apresentation.job-second-line' | translate | uppercase }}</span>
+    <app-apresentation-button *ngFor="let values of apresentationLinks" [values]="values"></app-apresentation-button>
+    <span class="description-text">{{ 'apresentation.description' | translate }}</span>
+  </app-apresentation>
+
+  <app-hard-skills id="skills">
+    <app-description></app-description>
+    <app-skill *ngFor="let skill of skills" [skill]="skill"></app-skill>
+  </app-hard-skills>
+
+  <app-projects id="projects">
     <app-project *ngFor="let project of projects" [model]="project">
       <app-project-button-link *ngFor="let button of project.buttons" [model]="button"></app-project-button-link>
     </app-project>
   </app-projects>
-  <app-experience></app-experience>
-  <app-contact></app-contact>
+
+  <app-experience id="experience">
+    <app-job *ngFor="let job of jobs" [job]="job"></app-job>
+  </app-experience>
 </div>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item appAnchor goTo="apresentation">{{ 'header.buttons.apresentation' | translate }}</button>
+  <button mat-menu-item appAnchor goTo="skills">{{ 'header.buttons.skills' | translate }}</button>
+  <button mat-menu-item appAnchor goTo="projects">{{ 'header.buttons.projects' | translate }}</button>
+  <button mat-menu-item appAnchor goTo="experience">{{ 'header.buttons.experience' | translate }}</button>
+</mat-menu>

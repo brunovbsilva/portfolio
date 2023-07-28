@@ -1,10 +1,9 @@
 :host {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-around;
-  margin: 0 auto;
   .description {
+    position: relative;
+    display: flex;
     width: 50%;
   }
   .skills {
@@ -12,14 +11,10 @@
     display: flex;
     flex-wrap: wrap;
     width: 50%;
-    .skill {
-      width: 33%;
-      margin: 0
-    }
   }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 768px) {
   :host {
     .description {
       width: 100%;

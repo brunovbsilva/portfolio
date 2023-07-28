@@ -15,11 +15,7 @@ $my-theme: mat.define-light-theme((
 
 @include mat.all-component-themes($my-theme);
 
-.content {
-    background-color: map_get($my-primary, 50) !important;
-}
-
 mat-card {
-    background-color: map_get($my-primary, 100) !important;
+    background-color: map_get($my-light-colors, 500) !important;
 }
 
