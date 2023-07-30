@@ -21,5 +21,42 @@
       "email": "copiar email"
     },
     "snackbar-message": "Copiado para área de transferência!"
+  },
+
+  "experience": {
+    "title": "Experiência",
+    "current-working": "atual",
+    
+    "portway": {
+        "name": "Portway",
+        "position": "Desenvolvedor Fullstack",
+        "description": "Migração e suporte em um sistema de gestão de vendas para empresas multinacionais. O sistema foi migrado de uma arquitetura monolítica feita em .NET Core MVC para uma arquitetura de microserviços. Foi utilizado para o desenvolvimento .NET Core, Angular e SQL Server."
+    },
+    
+    "stefanini": {
+        "name": "Stefanini",
+        "position": "Desenvolvedor Fullstack",
+        "description": "Desenvolvimento da plataforma de Trading da Raízen, uma das maiores empresas de energia do Brasil. Nessa plataforma, os clientes podem solicitar entregas de combustíveis e derivados de petróleo, além de acompanhar e gerenciar suas entregas e extratos de contas. O sistema foi desenvolvido utilizando uma arquitetura de microserviços, .NET Core, Angular e SQL Server."
+    }
+  },
+
+  "projects": {
+    "title": "Projetos",
+    "view-code": "Ver código",
+    "open": "Abrir em nova aba",
+    
+    "under-construction": {
+        "title": "Em construção...",
+        "description": "Em construção. Mais funcionalidades serão adicionadas em breve..."
+    },
+    
+    "portifolio": {
+        "title": "Portfólio",
+        "description": "Este projeto é meu portfólio pessoal. Foi desenvolvido utilizando Angular e Material Design. É uma Aplicação de Página Única (SPA) e está hospedado no Github Pages."
+    }
+  },
+
+  "skills": {
+    "title": "Habilidades"
   }
 }
