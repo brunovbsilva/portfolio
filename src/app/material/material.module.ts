@@ -9,6 +9,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {CdkMenuModule} from '@angular/cdk/menu';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatRippleModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatProgressBarModule
   ],
   exports: [
     CdkMenuModule,
@@ -33,7 +35,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatRippleModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatProgressBarModule
   ]
 })
 export class MaterialModule {}

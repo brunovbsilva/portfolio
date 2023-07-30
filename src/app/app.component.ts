@@ -18,8 +18,8 @@ export class AppComponent {
     private domSanitizer: DomSanitizer
   ) {
     this.culture_code = window.navigator.language ?? 'pt-BR';
-    translate.setDefaultLang(this.culture_code);
-    translate.use(this.culture_code);
+    this.translate.setDefaultLang(this.culture_code);
+    this.translate.use(this.culture_code);
     this.matIconRegistry.addSvgIconLiteral(
       'linkedin',
       this.domSanitizer.bypassSecurityTrustHtml(linkedin)

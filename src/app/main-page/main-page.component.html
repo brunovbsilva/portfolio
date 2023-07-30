@@ -1,5 +1,4 @@
 <div class="main-content mat-app-background">
-
   <header class="header">
     <h2>{{ 'header.project' | translate }}</h2>
 
@@ -21,11 +20,6 @@
     <span class="description-text">{{ 'apresentation.description' | translate }}</span>
   </app-apresentation>
 
-  <app-hard-skills id="skills">
-    <app-description></app-description>
-    <app-skill *ngFor="let skill of skills" [skill]="skill"></app-skill>
-  </app-hard-skills>
-
   <app-projects id="projects">
     <app-project *ngFor="let project of projects" [model]="project">
       <app-project-button-link *ngFor="let button of project.buttons" [model]="button"></app-project-button-link>
@@ -35,6 +29,11 @@
   <app-experience id="experience">
     <app-job *ngFor="let job of jobs" [job]="job"></app-job>
   </app-experience>
+
+  <app-hard-skills id="skills">
+    <app-description></app-description>
+    <app-skill *ngFor="let skill of skills" [skill]="skill"></app-skill>
+  </app-hard-skills>
 </div>
 
 <mat-menu #menu="matMenu">

@@ -1,10 +1,10 @@
 <mat-card class="job">
   <mat-card-header>
-    <mat-card-title>{{job.position}} - {{job.company}}</mat-card-title>
-    <mat-card-subtitle>{{job.startDate | date: 'MM/YYYY'}} - {{job.endDate | date: 'MM/YYYY'}}</mat-card-subtitle>
+    <mat-card-title>{{ job.position | translate }} - {{ job.company | translate }}</mat-card-title>
+    <mat-card-subtitle>{{ job.startDate | date: 'MM/YYYY' }} - {{ job.endDate ? (job.endDate | date: 'MM/YYYY') : 'experience.current-working' | translate }}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <p>{{job.description}}</p>
+    <p>{{ job.description | translate }}</p>
   </mat-card-content>
   <mat-card-actions>
     <mat-chip *ngFor="let skill of job.skills">{{skill}}</mat-chip>

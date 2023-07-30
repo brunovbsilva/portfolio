@@ -1,6 +1,12 @@
 :host {
   width: 33.33%;
   padding: 0.5rem;
+  .job {
+    mat-card-content {
+      margin-top: 1rem;
+      aspect-ratio: 4/2;
+    }
+  }
 }
 
 @media screen and (max-width: 1212px) {
