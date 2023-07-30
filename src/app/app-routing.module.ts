@@ -5,7 +5,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 
 const routes: Routes = [
   { 
-    path: '',
+    path: 'portifolio',
     component: LayoutComponent,
     children: [
       { path: '', component: MainPageComponent },

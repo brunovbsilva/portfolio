@@ -9,7 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./apresentation-button.component.scss']
 })
 export class ApresentationButtonComponent {
-  @Input() values: ApresentationButton = new ApresentationButton();
+  @Input() model: ApresentationButton = new ApresentationButton();
 
   constructor(
     private snackBar: MatSnackBar,

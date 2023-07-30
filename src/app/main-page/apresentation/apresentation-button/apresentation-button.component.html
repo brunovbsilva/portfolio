@@ -1,9 +1,9 @@
 <div matRipple 
   class="button" 
-  (click)="onClick(values.value, values.type)"
+  (click)="onClick(model.value, model.type)"
   [matRippleCentered]="true"
   [matRippleDisabled]="false"
   [matRippleUnbounded]="false"
-  [matTooltip]="'apresentation.tooltips.'+values.name! | translate">
-  <mat-icon [svgIcon]="values.svgIcon!" inline="true" color="primary"></mat-icon>
+  [matTooltip]="'apresentation.tooltips.' + model.name! | translate">
+  <mat-icon [svgIcon]="model.svgIcon!" inline="true" color="primary"></mat-icon>
 </div>

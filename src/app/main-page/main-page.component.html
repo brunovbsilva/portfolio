@@ -17,7 +17,7 @@
     <span class="greatings">{{ 'apresentation.greatings' | translate | uppercase }}</span>
     <span class="job-first-line">{{ 'apresentation.job-first-line' | translate | uppercase }}</span>
     <span class="job-second-line">{{ 'apresentation.job-second-line' | translate | uppercase }}</span>
-    <app-apresentation-button *ngFor="let values of apresentationLinks" [values]="values"></app-apresentation-button>
+    <app-apresentation-button *ngFor="let model of apresentationLinks" [model]="model"></app-apresentation-button>
     <span class="description-text">{{ 'apresentation.description' | translate }}</span>
   </app-apresentation>
 
