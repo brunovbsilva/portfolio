@@ -1,8 +1,8 @@
 export class Project {
   name!: string;
-  description?: string;
   imagePath?: string;
-  buttons: ProjectButtonLink[] = [];
+  buttons?: ProjectButtonLink[];
+  loading?: boolean;
 }
 
 export class ProjectButtonLink {

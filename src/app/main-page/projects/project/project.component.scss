@@ -1,11 +1,22 @@
 :host {
   width: 33.33%;
   padding: 0.5rem;
-}
-.card {
-  padding: 1rem;
-  .buttons {
-    display: flex;
+  .card {
+    .image {
+      aspect-ratio: 2/1;
+      margin: 1rem 0;
+    }
+    .under-construction {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 13rem;
+      line-height: 13rem;
+      margin: 1rem 0;
+    }
+    .buttons {
+      display: flex;
+    }
   }
 }
 

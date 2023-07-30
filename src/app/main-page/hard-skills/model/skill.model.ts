@@ -1,4 +1,4 @@
 export class Skill {
-  name: string = 'mocked name';
+  name: string = '';
   icon: string = '';
 }

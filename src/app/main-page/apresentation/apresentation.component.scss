@@ -1,3 +1,6 @@
+@use '@angular/material' as mat;
+@import '../../../assets/sass/palette';
+
 .apresentation {
   display: flex;
   flex-direction: column;
@@ -5,6 +8,7 @@
     font-size: 2vi;
     line-height: 2vi;
     font-weight: 700;
+    color: map_get($my-text-colors, 900);
   }
   .middle {
     position: relative;
@@ -35,6 +39,7 @@
       font-size: 2vi;
       line-height: 2vi;
       margin: 1rem;
+      color: map_get($my-text-colors, 900);
     }
   }
 }

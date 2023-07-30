@@ -4,7 +4,7 @@
   [matRippleDisabled]="false"
   [matRippleUnbounded]="false"
   [matRippleRadius]="15"
-  [matTooltip]="model.tooltip!"
+  [matTooltip]="model.tooltip! | translate"
   matTooltipPosition="above"
   [matTooltipDisabled]="!model.tooltip">
   <mat-icon [inline]="true">{{model.type}}</mat-icon>
