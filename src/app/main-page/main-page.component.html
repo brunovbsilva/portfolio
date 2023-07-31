@@ -27,7 +27,7 @@
   </app-projects>
 
   <app-experience id="experience" [header]="experience.header">
-    <app-job *ngFor="let job of experience.jobs" [job]="job"></app-job>
+    <app-job *ngFor="let job of experience.jobs" [job]="job" [language]="lang"></app-job>
   </app-experience>
 
   <app-hard-skills id="skills" [header]="hardSkills.header">

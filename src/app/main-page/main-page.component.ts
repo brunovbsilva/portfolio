@@ -170,7 +170,6 @@ export class MainPageComponent {
           company: 'Stefanini',
           description: 'Development of the Trading platform for Raízen, one of the largest energy companies in Brazil. In this platform, customers can request fuel and petroleum derivatives deliveries, as well as track and manage their deliveries and account statements. The system was developed using a microservices architecture, .NET Core, Angular, and SQL Server.',
           startDate: new Date(2022, 8, 1),
-          language: Language.enUS,
           skills: ['C#', 'Angular', 'Ionic', 'Git', 'SQL Server']
         },
         {
@@ -190,7 +189,6 @@ export class MainPageComponent {
           company: 'Stefanini',
           description: 'Desenvolvimento da plataforma de Trading para a Raízen, uma das maiores empresas de energia do Brasil. Nesta plataforma, os clientes podem solicitar entregas de combustíveis e derivados de petróleo, além de acompanhar e gerenciar suas entregas e extratos de conta. O sistema foi desenvolvido utilizando uma arquitetura de microsserviços, .NET Core, Angular e SQL Server.',
           startDate: new Date(2022, 8, 1),
-          language: Language.ptBR,
           skills: ['C#', 'Angular', 'Ionic', 'Git', 'SQL Server']
         },
         {

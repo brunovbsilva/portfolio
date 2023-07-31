@@ -12,5 +12,4 @@ export class Job {
   startDate: Date = new Date();
   endDate?: Date;
   skills: string[] = [];
-  language?: Language = Language.enUS;
 }

@@ -1,7 +1,7 @@
 <mat-card class="job">
   <mat-card-header>
     <mat-card-title>{{ job.position }} - {{ job.company }}</mat-card-title>
-    <mat-card-subtitle>{{ job.startDate | date: 'MM/YYYY' }} - {{ job.endDate ? (job.endDate | date: 'MM/YYYY') : (job.language == 1) ? 'Atual' : 'Current' }}</mat-card-subtitle>
+    <mat-card-subtitle>{{ job.startDate | date: 'MM/YYYY' }} - {{ job.endDate ? (job.endDate | date: 'MM/YYYY') : (language == 1) ? 'Atual' : 'Current' }}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
     <p>{{ job.description }}</p>
