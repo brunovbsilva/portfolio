@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { Job } from './model/job.model';
+import { Job } from '../../models/experience.model';
+import { Language } from '../../models/language.model';
 
 @Component({
   selector: 'app-job',
@@ -8,4 +9,5 @@ import { Job } from './model/job.model';
 })
 export class JobComponent {
   @Input() job!: Job;
+  @Input() language!: Language;
 }

@@ -1,5 +1,11 @@
+export class ProjectsModel {
+  header: string = '';
+  projects: Project[] = [];
+}
+
 export class Project {
-  name!: string;
+  title!: string;
+  description?: string;
   imagePath?: string;
   buttons?: ProjectButtonLink[];
   loading?: boolean;

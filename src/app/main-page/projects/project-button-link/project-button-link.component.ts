@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ProjectButtonLink } from '../model/project.model';
+import { ProjectButtonLink } from '../../models/project.model';
 
 @Component({
   selector: 'app-project-button-link',

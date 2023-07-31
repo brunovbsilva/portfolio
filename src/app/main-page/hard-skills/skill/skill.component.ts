@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { Skill } from '../model/skill.model';
-import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
+import { Skills } from '../../models/hard-skills.model';
+import { animate, keyframes, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-skill',
@@ -22,6 +22,6 @@ import { animate, keyframes, state, style, transition, trigger } from '@angular/
   ],
 })
 export class SkillComponent {
-  @Input() skill: Skill = new Skill();
+  @Input() skill: Skills = new Skills();
   public spinnerState: 'initial' | 'final' = 'initial';
 }

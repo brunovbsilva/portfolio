@@ -6,8 +6,6 @@ import { LayoutModule } from './layout/layout.module';
 import { MainPageComponent } from './main-page/main-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
@@ -25,10 +23,6 @@ import { AnchorDirective } from './directive/anchor.directive';
 import { ApresentationButtonComponent } from './main-page/apresentation/apresentation-button/apresentation-button.component';
 
 registerLocaleData(localePt);
-
-function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
-  return new TranslateHttpLoader(http);
-}
 
 @NgModule({
   declarations: [
@@ -52,14 +46,7 @@ function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     AppRoutingModule,
     HttpClientModule,
     LayoutModule,
-    MaterialModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [ HttpClient ],
-      },
-    })
+    MaterialModule
   ],
   providers: [
     MaterialProviders,

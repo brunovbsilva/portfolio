@@ -4,7 +4,6 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutComponent } from './layout.component';
 import { MaterialModule } from '../material/material.module';
-import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -14,8 +13,7 @@ import { TranslateModule } from '@ngx-translate/core';
     CommonModule,
     RouterModule,
     BrowserAnimationsModule,
-    MaterialModule,
-    TranslateModule
+    MaterialModule
   ],
   exports: [
     LayoutComponent,

@@ -1,3 +1,10 @@
+import { Language } from "./language.model";
+
+export class ExperienceModel {
+  header: string = '';
+  jobs: Job[] = [];
+}
+
 export class Job {
   position: string = '';
   company: string = '';
