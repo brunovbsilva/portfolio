@@ -1,4 +1,4 @@
-import { Component, ContentChildren, QueryList } from '@angular/core';
+import { Component, ContentChildren, Input, QueryList } from '@angular/core';
 import { JobComponent } from './job/job.component';
 
 @Component({
@@ -7,5 +7,6 @@ import { JobComponent } from './job/job.component';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent {
+  @Input() header: string = '';
   @ContentChildren(JobComponent) jobs?: QueryList<JobComponent>;
 }

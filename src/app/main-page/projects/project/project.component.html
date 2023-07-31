@@ -1,13 +1,13 @@
 <mat-card class="card">
   <mat-card-header>
-    <mat-card-title>{{ 'projects.' + model.name + '.title' | translate }}</mat-card-title>
+    <mat-card-title>{{ model.title }}</mat-card-title>
   </mat-card-header>
   <img class="image" *ngIf="model.imagePath else underConstruction" [src]="model.imagePath"/>
   <ng-template #underConstruction>
     <div class="under-construction"><mat-icon color="warn" [inline]="true">construction</mat-icon></div>
   </ng-template>
   <mat-card-content>
-    <p>{{ 'projects.' + model.name + '.description' | translate }}</p>
+    <p>{{ model.description }}</p>
   </mat-card-content>
   <mat-card-actions>
     <ng-content select="app-project-button-link"></ng-content>

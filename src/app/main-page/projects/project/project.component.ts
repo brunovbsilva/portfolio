@@ -1,6 +1,6 @@
 import { Component, ContentChildren, Input, QueryList} from '@angular/core';
 import { ProjectButtonLinkComponent } from '../project-button-link/project-button-link.component';
-import { Project } from '../model/project.model';
+import { Project } from '../../models/project.model';
 
 @Component({
   selector: 'app-project',

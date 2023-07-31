@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { ApresentationButton } from './model/apresentation-button.model';
+import { ApresentationButton, ApresentationButtonType } from '../../models/apresentation.model';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-apresentation-button',
@@ -12,16 +11,15 @@ export class ApresentationButtonComponent {
   @Input() model: ApresentationButton = new ApresentationButton();
 
   constructor(
-    private snackBar: MatSnackBar,
-    private translate: TranslateService
+    private snackBar: MatSnackBar
   ) { }
 
-  onClick(link: string, type: 'link' | 'copy' = 'link'): void {
+  onClick(link: string, type: ApresentationButtonType): void {
     switch (type) {
-      case 'link':
+      case ApresentationButtonType.link:
         window.open(link, '_blank');
         break;
-      case 'copy':
+      case ApresentationButtonType.copy:
         navigator.clipboard.writeText(link);
         this.openSnackBar();
         break;
@@ -29,8 +27,6 @@ export class ApresentationButtonComponent {
   }
 
   openSnackBar() {
-    this.translate.get('apresentation.snackbar-message').subscribe(t => {
-      this.snackBar.open(t, undefined, { duration: 1000 });
-    });
+    this.snackBar.open(this.model.snackbar!, undefined, { duration: 1000 });
   }
 }

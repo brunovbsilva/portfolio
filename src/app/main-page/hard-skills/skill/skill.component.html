@@ -2,7 +2,7 @@
   <div class="spinner" [@spinner]="spinnerState"></div>
   <mat-card 
     class="card"
-    [matTooltip]="'skills.' + skill.name + '.tooltip' | translate">
+    [matTooltip]="skill.tooltip">
     <img [src]="'assets/svgs/'+skill.icon+'.svg'"/>
   </mat-card>
 </div>
