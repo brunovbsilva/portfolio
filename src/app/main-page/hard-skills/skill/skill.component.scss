@@ -1,5 +1,5 @@
 :host {
-  width: 33.33%;
+  width: 16.666%;
   padding: 0.25rem;
 }
 .skill {
@@ -8,17 +8,6 @@
   padding: 0.25rem;
   overflow: hidden;
   cursor: pointer;
-  .spinner {
-    position: absolute;
-    width: 150%;
-    left: -25%;
-    display: none;
-  }
-  &:hover {
-    .spinner {
-      display: block;
-    }
-  }
   .card {
     padding: 1rem;
     aspect-ratio: 1/1;
