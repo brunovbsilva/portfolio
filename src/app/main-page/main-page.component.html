@@ -18,7 +18,7 @@
     </mat-menu>
   </header>
 
-  <app-apresentation id="apresentation">
+  <app-apresentation id="apresentation" appObserverChild [observer]="this.observer">
     <span class="greatings">{{ apresentation.greatings | uppercase }}</span>
     <span class="job-first-line">{{ apresentation.firstLine | uppercase }}</span>
     <span class="job-second-line">{{ apresentation.secondLine | uppercase }}</span>

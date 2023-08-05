@@ -23,6 +23,7 @@ import { AnchorDirective } from './directive/anchor.directive';
 import { ApresentationButtonComponent } from './main-page/apresentation/apresentation-button/apresentation-button.component';
 import { HoverContentDirective } from './directive/hover-content.directive';
 import { AnchorComponent } from './components/anchor/anchor.component';
+import { ObserverChildDirective } from './directive/observer-child.directive';
 
 registerLocaleData(localePt);
 
@@ -42,7 +43,8 @@ registerLocaleData(localePt);
     AnchorDirective,
     ApresentationButtonComponent,
     HoverContentDirective,
-    AnchorComponent
+    AnchorComponent,
+    ObserverChildDirective
   ],
   imports: [
     BrowserModule,

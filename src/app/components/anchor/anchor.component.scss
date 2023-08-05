@@ -1,3 +1,6 @@
+@use '@angular/material' as mat;
+@import '../../../assets/sass/palette';
+
 .anchor {
     position: absolute;
     right: 30px;
@@ -9,5 +12,6 @@
     text-align: center;
     border-radius: 50%;
     cursor: pointer;
-    background-color: #ABABAB;
+    background-color: map_get($my-primary, A400);
+    color: map_get($my-light-colors, 500);
 }
