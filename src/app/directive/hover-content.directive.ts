@@ -1,7 +1,7 @@
 import { Directive, EventEmitter, HostListener, Output } from '@angular/core';
 
 @Directive({
-  selector: '[appHoverContent]'
+  selector: '[appHoverContent]',
 })
 export class HoverContentDirective {
   @Output() isHover: EventEmitter<string> = new EventEmitter<string>();

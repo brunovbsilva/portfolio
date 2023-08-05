@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ProjectsModel } from './models/project.model';
 import { HardSkillsModel } from './models/hard-skills.model';
 import { ExperienceModel } from './models/experience.model';
@@ -14,7 +14,8 @@ import { headerEN, headerPT } from '../consts/header.const';
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
-  styleUrls: ['./main-page.component.scss']
+  styleUrls: ['./main-page.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MainPageComponent {
   private _lang: Language = Language.enUS;
@@ -28,6 +29,9 @@ export class MainPageComponent {
   public projects: ProjectsModel;
   public experience: ExperienceModel;
   public hardSkills: HardSkillsModel;
+  public showAnchor: boolean = false;
+
+  readonly observer = new IntersectionObserver((entries) => this.showAnchor = !entries[0].isIntersecting);
 
   constructor() {
     this.lang = window.navigator.language == 'pt-BR' ? Language.ptBR : Language.enUS;
