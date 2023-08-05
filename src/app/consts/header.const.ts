@@ -1,7 +1,7 @@
 import { HeaderModel } from "../main-page/models/header.model";
 
 export const headerEN: HeaderModel = {
-    name: "Bruno Silva's portifolio",
+    name: "Bruno Silva's portfolio",
     apresentation: 'Apresentation',
     projects: 'Projects',
     experience: 'Experience',

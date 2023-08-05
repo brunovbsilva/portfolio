@@ -39,9 +39,6 @@ export class MainPageComponent {
     this.projects = this.getProjectsResources();
     this.experience = this.getExperienceResources();
     this.hardSkills = this.getHardSkillsResources();
-    setTimeout(() => {
-      this.showAnchor = true;
-    }, 1000);
   }
 
   private updateResources(): void {

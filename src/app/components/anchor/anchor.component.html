@@ -1,3 +1,5 @@
-<div class="anchor" appHoverContent (isHover)="state = $event" [@hover]="state" @spinner *ngIf="showAnchor">
+<div class="anchor" 
+    [@hover]="state" appHoverContent (isHover)="state = $event"
+    @spinner *ngIf="showAnchor">
     <mat-icon [inline]="true">north</mat-icon>
 </div>

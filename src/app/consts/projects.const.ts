@@ -4,12 +4,12 @@ export const projectsEN : ProjectsModel = {
     header: 'Projects',
     projects: [
       {
-        title: "Portifolio",
+        title: "Portfolio",
         description: "This project is my personal portfolio. It was developed using Angular and Material Design. It is a SPA (Single Page Application) and is hosted on Github Pages.",
-        imagePath: 'assets/images/portifolio.png',
+        imagePath: 'assets/images/portfolio.png',
         buttons: [
-          { type: 'code', link: 'https://github.com/brunovbsilva/portifolio', tooltip: 'View code' },
-          { type: 'open_in_new', link: 'https://brunovbsilva.github.io/portifolio/', tooltip: 'Open project' },
+          { type: 'code', link: 'https://github.com/brunovbsilva/portfolio', tooltip: 'View code' },
+          { type: 'open_in_new', link: 'https://brunovbsilva.github.io/portfolio/', tooltip: 'Open project' },
         ]
       },
       { 
@@ -26,10 +26,10 @@ export const projectsPT : ProjectsModel = {
       {
         title: "Portifólio",
         description: "Este projeto é o meu portifólio pessoal. Foi desenvolvido utilizando Angular e Material Design. É uma SPA (Single Page Application) e está hospedado no Github Pages.",
-        imagePath: 'assets/images/portifolio.png',
+        imagePath: 'assets/images/portfolio.png',
         buttons: [
-          { type: 'code', link: 'https://github.com/brunovbsilva/portifolio', tooltip: 'Ver código' },
-          { type: 'open_in_new', link: 'https://brunovbsilva.github.io/portifolio/', tooltip: 'Abrir projeto' },
+          { type: 'code', link: 'https://github.com/brunovbsilva/portfolio', tooltip: 'Ver código' },
+          { type: 'open_in_new', link: 'https://brunovbsilva.github.io/portfolio/', tooltip: 'Abrir projeto' },
         ]
       },
       { 
