@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { ProjectsModel } from './models/project.model';
 import { HardSkillsModel } from './models/hard-skills.model';
 import { ExperienceModel } from './models/experience.model';
@@ -14,8 +14,7 @@ import { headerEN, headerPT } from '../consts/header.const';
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
-  styleUrls: ['./main-page.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  styleUrls: ['./main-page.component.scss']
 })
 export class MainPageComponent {
   private _lang: Language = Language.enUS;
@@ -40,6 +39,9 @@ export class MainPageComponent {
     this.projects = this.getProjectsResources();
     this.experience = this.getExperienceResources();
     this.hardSkills = this.getHardSkillsResources();
+    setTimeout(() => {
+      this.showAnchor = true;
+    }, 1000);
   }
 
   private updateResources(): void {

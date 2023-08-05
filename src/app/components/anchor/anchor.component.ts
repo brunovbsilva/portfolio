@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { HoverContentAnimations } from 'src/app/animations/hover-content.animation';
 import { spinAnimations } from 'src/app/animations/spin.animations';
 
@@ -10,4 +10,5 @@ import { spinAnimations } from 'src/app/animations/spin.animations';
 })
 export class AnchorComponent {
   public state: string = '';
+  @Input() public showAnchor: boolean = false;
 }
