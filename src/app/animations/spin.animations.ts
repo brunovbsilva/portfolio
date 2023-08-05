@@ -1,16 +1,20 @@
 import { animate, keyframes, style, transition, trigger } from "@angular/animations";
 
 export const spinAnimations = [
-    trigger('spinner', [
-        transition('* => final', [
-          animate('2s', keyframes([
-            style({ transform: 'rotate(0deg)', height: '0%', top: '50%', backgroundColor: 'blue', offset: 0 }),
-            style({ transform: 'rotate(180deg)', height: '80%', top: '10%', backgroundColor: 'red', offset: 0.5 }),
-            style({ transform: 'rotate(360deg)', height: '0%', top: '50%', backgroundColor: 'blue', offset: 1 })
-          ]))
-        ]),
-        transition('* => initial', [
-          animate('0s', style({ transform: 'rotate(0deg)', opacity: 0 }))
-        ])
-      ]),
+  trigger('spinner', [
+    transition(':enter', [
+      animate('1s ease-in-out', keyframes([
+        style({ transform: 'rotate(0deg)', scale: 0, offset: 0 }),
+        style({ transform: 'rotate(90deg)', scale: 1.2, offset: 0.3 }),
+        style({ transform: 'rotate(360deg)', scale: 1, offset: 1 })
+      ]))
+    ]),
+    transition(':leave', [
+      animate('0.6s ease-in-out', keyframes([
+        style({ transform: 'rotate(0deg)', scale: 1, offset: 0 }),
+        style({ transform: 'rotate(270deg)', scale: 1.2, offset: 0.7 }),
+        style({ transform: 'rotate(360deg)', scale: 0, offset: 1 })
+      ]))
+    ])
+  ]),
 ]

@@ -6,9 +6,7 @@ import { HoverContentAnimations } from 'src/app/animations/hover-content.animati
   selector: 'app-skill',
   templateUrl: './skill.component.html',
   styleUrls: ['./skill.component.scss'],
-  animations: [
-    HoverContentAnimations
-  ],
+  animations: [HoverContentAnimations],
 })
 export class SkillComponent {
   @Input() skill: Skills = new Skills();

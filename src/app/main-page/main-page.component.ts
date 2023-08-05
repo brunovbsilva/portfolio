@@ -28,6 +28,9 @@ export class MainPageComponent {
   public projects: ProjectsModel;
   public experience: ExperienceModel;
   public hardSkills: HardSkillsModel;
+  public get showAnchor(): boolean {
+    return true;
+  }
 
   constructor() {
     this.lang = window.navigator.language == 'pt-BR' ? Language.ptBR : Language.enUS;

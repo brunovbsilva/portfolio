@@ -4,6 +4,9 @@
   [matRippleCentered]="true"
   [matRippleDisabled]="false"
   [matRippleUnbounded]="false"
-  [matTooltip]="model.tooltip">
+  [matTooltip]="model.tooltip"
+  appHoverContent 
+  (isHover)="state = $event"
+  [@hover]="state">
   <mat-icon [svgIcon]="model.svgIcon!" inline="true" color="primary"></mat-icon>
 </div>
