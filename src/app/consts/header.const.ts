@@ -9,7 +9,7 @@ export const headerEN: HeaderModel = {
 }
 
 export const headerPT: HeaderModel = {
-    name: 'Portifólio de Bruno Silva',
+    name: 'Portfólio de Bruno Silva',
     apresentation: 'Apresentação',
     projects: 'Projetos',
     experience: 'Experiência',

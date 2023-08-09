@@ -24,8 +24,8 @@ export const projectsPT : ProjectsModel = {
     header: 'Projetos',
     projects: [
       {
-        title: "Portifólio",
-        description: "Este projeto é o meu portifólio pessoal. Foi desenvolvido utilizando Angular e Material Design. É uma SPA (Single Page Application) e está hospedado no Github Pages.",
+        title: "Portfólio",
+        description: "Este projeto é o meu portfólio pessoal. Foi desenvolvido utilizando Angular e Material Design. É uma SPA (Single Page Application) e está hospedado no Github Pages.",
         imagePath: 'assets/images/portfolio.png',
         buttons: [
           { type: 'code', link: 'https://github.com/brunovbsilva/portfolio', tooltip: 'Ver código' },
