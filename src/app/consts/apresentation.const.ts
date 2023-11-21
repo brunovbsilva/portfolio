@@ -9,7 +9,7 @@ export const apresentationEN: ApresentationModel = {
       { 
         type: ApresentationButtonType.link,
         tooltip: "Linkedin",
-        value: 'https://www.linkedin.com/in/bruno-vinicius-346b77163/',
+        value: 'https://www.linkedin.com/in/bruno-silva-346b77163',
         svgIcon: 'linkedin' 
       },
       { 
@@ -44,7 +44,7 @@ export const apresentationEN: ApresentationModel = {
       {
         type: ApresentationButtonType.link,
         tooltip: "Linkedin",
-        value: 'https://www.linkedin.com/in/bruno-vinicius-346b77163/',
+        value: 'https://www.linkedin.com/in/bruno-silva-346b77163',
         svgIcon: 'linkedin'
       },
       {
