@@ -1,27 +1,21 @@
 import { Component, Input } from '@angular/core';
 import { Skills } from '../../models/hard-skills.model';
-import { animate, keyframes, style, transition, trigger } from '@angular/animations';
+import { HoverContentAnimations } from 'src/app/animations/hover-content.animation';
 
 @Component({
   selector: 'app-skill',
   templateUrl: './skill.component.html',
   styleUrls: ['./skill.component.scss'],
-  animations: [
-    trigger('spinner', [
-      transition('* => final', [
-        animate('2s', keyframes([
-          style({ transform: 'rotate(0deg)', height: '0%', top: '50%', backgroundColor: 'blue', offset: 0 }),
-          style({ transform: 'rotate(180deg)', height: '80%', top: '10%', backgroundColor: 'red', offset: 0.5 }),
-          style({ transform: 'rotate(360deg)', height: '0%', top: '50%', backgroundColor: 'blue', offset: 1 })
-        ]))
-      ]),
-      transition('* => initial', [
-        animate('0s', style({ transform: 'rotate(0deg)', opacity: 0 }))
-      ])
-    ])
-  ],
+  animations: [HoverContentAnimations],
 })
 export class SkillComponent {
   @Input() skill: Skills = new Skills();
   public spinnerState: 'initial' | 'final' = 'initial';
+  public state: string = '';
+
+  updateState(value: string) {
+    console.log(value);
+    this.state = value;
+  }
+
 }

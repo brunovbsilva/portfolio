@@ -19,6 +19,8 @@
     }
   }
   #apresentation {
+    display: flex;
+    justify-content: center;
     user-select: none;
     position: relative;
     margin: 7rem 0;

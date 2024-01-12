@@ -1,4 +1,3 @@
-import { ViewportScroller } from '@angular/common';
 import { Directive, HostListener, Input } from '@angular/core';
 
 @Directive({
@@ -8,14 +7,15 @@ export class AnchorDirective {
 
   @Input() goTo: string = '';
 
-  constructor(private viewportScroller: ViewportScroller) { }
+  constructor() { }
 
   @HostListener('click', ['$event']) onClick($event: any) {
     this.anchor(this.goTo);
   }
 
   public anchor(elementId: string): void {
-    this.viewportScroller.scrollToAnchor(elementId);
+    (document.getElementById(elementId) as HTMLElement)
+      .scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 
 }

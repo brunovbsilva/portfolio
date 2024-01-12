@@ -4,21 +4,24 @@
 .apresentation {
   display: flex;
   flex-direction: column;
+  max-width: 1100px;
   .greatings {
     font-size: 2vi;
     line-height: 2vi;
     font-weight: 700;
+    margin-bottom: 1rem;
     color: map_get($my-text-colors, 900);
   }
   .middle {
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
     .first-line, .second-line {
       position: relative;
       font-size: 15vi;
       line-height: 13vi;
-      font-weight: 900;
+      font-weight: 800;
       display: flex;
       align-items: center;
       .buttons {
@@ -29,7 +32,6 @@
         flex: 1 1 auto;
       }
     }
-    
   }
   .bottom {
     display: flex;
@@ -44,7 +46,7 @@
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1200px) {
   .apresentation {
     .greatings {
       font-size: 1.8rem;
@@ -52,8 +54,8 @@
     }
     .middle {
       .first-line, .second-line {
-        font-size: 14rem;
-        line-height: 11rem;
+        font-size: 11.5rem;
+        line-height: 9rem;
       }
     }
     .bottom {
@@ -70,6 +72,9 @@
     .greatings {
       font-size: 1rem;
       line-height: 1rem;
+    }
+    .middle {
+      margin-bottom: 1rem;
     }
     .bottom {
       .description {

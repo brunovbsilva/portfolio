@@ -1,4 +1,4 @@
-<div class="main-content mat-app-background">
+<div class="main-content mat-app-background" id="main-content">
   <header class="header">
     <h2>{{ header.name }}</h2>
 
@@ -10,9 +10,15 @@
     <button mat-button appAnchor goTo="skills" class="header-button">{{ header.skills }}</button>
 
     <button mat-icon-button [matMenuTriggerFor]="menu" class="menu"><mat-icon>more_vert</mat-icon></button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item appAnchor goTo="apresentation">{{ header.apresentation }}</button>
+      <button mat-menu-item appAnchor goTo="projects">{{ header.projects }}</button>
+      <button mat-menu-item appAnchor goTo="experience">{{ header.experience }}</button>
+      <button mat-menu-item appAnchor goTo="skills">{{ header.skills }}</button>
+    </mat-menu>
   </header>
 
-  <app-apresentation id="apresentation">
+  <app-apresentation id="apresentation" appObserverChild [observer]="this.observer">
     <span class="greatings">{{ apresentation.greatings | uppercase }}</span>
     <span class="job-first-line">{{ apresentation.firstLine | uppercase }}</span>
     <span class="job-second-line">{{ apresentation.secondLine | uppercase }}</span>
@@ -36,9 +42,4 @@
   </app-hard-skills>
 </div>
 
-<mat-menu #menu="matMenu">
-  <button mat-menu-item appAnchor goTo="apresentation">{{ header.apresentation }}</button>
-  <button mat-menu-item appAnchor goTo="projects">{{ header.projects }}</button>
-  <button mat-menu-item appAnchor goTo="experience">{{ header.experience }}</button>
-  <button mat-menu-item appAnchor goTo="skills">{{ header.skills }}</button>
-</mat-menu>
+<app-anchor appAnchor goTo="main-content" [showAnchor]="showAnchor"></app-anchor>

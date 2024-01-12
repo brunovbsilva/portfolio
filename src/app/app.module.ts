@@ -21,6 +21,9 @@ import { ProjectButtonLinkComponent } from './main-page/projects/project-button-
 import { JobComponent } from './main-page/experience/job/job.component';
 import { AnchorDirective } from './directive/anchor.directive';
 import { ApresentationButtonComponent } from './main-page/apresentation/apresentation-button/apresentation-button.component';
+import { HoverContentDirective } from './directive/hover-content.directive';
+import { AnchorComponent } from './components/anchor/anchor.component';
+import { ObserverChildDirective } from './directive/observer-child.directive';
 
 registerLocaleData(localePt);
 
@@ -38,7 +41,10 @@ registerLocaleData(localePt);
     ProjectButtonLinkComponent,
     JobComponent,
     AnchorDirective,
-    ApresentationButtonComponent
+    ApresentationButtonComponent,
+    HoverContentDirective,
+    AnchorComponent,
+    ObserverChildDirective
   ],
   imports: [
     BrowserModule,

@@ -17,6 +17,10 @@
     .buttons {
       display: flex;
     }
+    .card-description {
+      height: 80px;
+      overflow: auto;
+    }
   }
 }
 
