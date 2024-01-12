@@ -1,10 +1,12 @@
 import { ApresentationButtonType, ApresentationModel } from "../main-page/models/apresentation.model";
 
+const years = new Date().getFullYear() - 2020;
+
 export const apresentationEN: ApresentationModel = {
     greatings: "Hello 👋 I'm Bruno",
     firstLine: "Web",
     secondLine: "Developer",
-    description: "I have 3 years of professional experience in fullstack web development. Working mainly with .NET and Angular. I am ready to contribute with innovative solutions and seek technical excellence.",
+    description: `I have ${years} years of professional experience in fullstack web development. Working mainly with .NET and Angular. I am ready to contribute with innovative solutions and technical excellence.`,
     buttons: [
       { 
         type: ApresentationButtonType.link,
@@ -39,7 +41,7 @@ export const apresentationEN: ApresentationModel = {
     greatings: "Olá 👋 Eu sou o Bruno",
     firstLine: "Web",
     secondLine: "Developer",
-    description: "Tenho 3 anos de experiência profissional em desenvolvimento web fullstack. Trabalhando principalmente com .NET e Angular. Estou pronto para contribuir com soluções inovadoras e buscar a excelência técnica.",
+    description: `Tenho ${years} anos de experiência profissional em desenvolvimento web fullstack. Trabalhando principalmente com .NET e Angular. Estou pronto para contribuir com soluções inovadoras e excelência técnica.`,
     buttons: [
       {
         type: ApresentationButtonType.link,
