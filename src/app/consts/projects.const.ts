@@ -3,9 +3,18 @@ import { ProjectsModel } from "../main-page/models/project.model";
 export const projectsEN : ProjectsModel = {
     header: 'Projects',
     projects: [
+      {
+        title: 'Planning Poker',
+        description: "Project created to help the estimation of tasks in agile teams. It was developed in Angular and Firebase. It is hosted on Github Pages.",
+        imagePath: 'assets/images/planning-poker.png',
+        buttons: [
+          { type: 'code', link: 'https://github.com/brunovbsilva/planning-poker/', tooltip: 'View code' },
+          { type: 'open_in_new', link: 'https://brunovbsilva.github.io/planning-poker/', tooltip: 'Open project' },
+        ]
+      },
       { 
         title: 'Angular Observable Pattern',
-        description: "This project is a simple example of how to use the Observable Pattern in Angular. It implements a toaster component that are listening to a Subject. It is hosted on Github Pages.",
+        description: "This project is a simple example of how to use the Observable Pattern in Angular. For this, it implements a Toast component. It is hosted on Github Pages.",
         imagePath: 'assets/images/observable-pattern.png',
         buttons: [
           { type: 'code', link: 'https://github.com/brunovbsilva/angular-observable-pattern', tooltip: 'View code' },
@@ -37,8 +46,17 @@ export const projectsPT : ProjectsModel = {
     header: 'Projetos',
     projects: [
       {
+        title: 'Planning Poker',
+        description: "Projeto criado para auxiliar a estimativa de tarefas em equipes ágeis. Foi desenvolvido em Angular e Firebase. Está hospedado no Github Pages.",
+        imagePath: 'assets/images/planning-poker.png',
+        buttons: [
+          { type: 'code', link: 'https://github.com/brunovbsilva/planning-poker/', tooltip: 'Ver código' },
+          { type: 'open_in_new', link: 'https://brunovbsilva.github.io/planning-poker/', tooltip: 'Abrir projeto' }
+        ]
+      },
+      {
         title: 'Angular Observable Pattern',
-        description: "Este projeto é um simples exemplo de como utilizar o Observable Pattern no Angular. Ele implementa um componente toaster que fica escutando um Subject. Está hospedado no Github Pages.",
+        description: "Este projeto é um simples exemplo de como utilizar o Observable Pattern no Angular. Para isso, ele implementa um componente de Toast. Está hospedado no Github Pages.",
         imagePath: 'assets/images/observable-pattern.png',
         buttons: [
           { type: 'code', link: 'https://github.com/brunovbsilva/angular-observable-pattern', tooltip: 'Ver código' },
