@@ -8,7 +8,7 @@ const routes: Routes = [
     path: '',
     component: LayoutComponent,
     children: [
-      { path: '', component: MainPageComponent },
+      { path: '', component: MainPageComponent, title: "Bruno Silva's portfolio" },
     ]
   },
   { path: '**', redirectTo: '' }
