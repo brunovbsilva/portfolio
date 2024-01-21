@@ -1,0 +1,11 @@
+<div (click)="button.onClick()"
+  matRipple class="mini-icon"
+  [matRippleCentered]="true"
+  [matRippleDisabled]="false"
+  [matRippleUnbounded]="false"
+  [matRippleRadius]="15"
+  [matTooltip]="button.tooltip!"
+  matTooltipPosition="above"
+  [matTooltipDisabled]="!button.tooltip">
+  <mat-icon [inline]="true">{{button.icon}}</mat-icon>
+</div>
