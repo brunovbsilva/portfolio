@@ -1,0 +1,34 @@
+.repository-container {
+  overflow: hidden;
+  .repository-title {
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+  }
+  .data {
+    text-wrap: nowrap;
+    display: flex;
+    flex-wrap: wrap;
+    .data-item {
+      display: flex;
+      font-size: 12px;
+      margin-top: 12px;
+      height: 24px;
+      mat-icon {
+        margin-right: 4px;
+      }
+      span {
+        line-height: 24px;
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .description {
+    margin: 16px 0;
+    line-height: 20px;
+    height: 40px;
+    text-wrap: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

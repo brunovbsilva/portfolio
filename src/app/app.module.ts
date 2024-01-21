@@ -24,6 +24,8 @@ import { ApresentationButtonComponent } from './main-page/apresentation/apresent
 import { HoverContentDirective } from './directive/hover-content.directive';
 import { AnchorComponent } from './components/anchor/anchor.component';
 import { ObserverChildDirective } from './directive/observer-child.directive';
+import { RepositoriesComponent } from './repositories/repositories.component';
+import { SharedModule } from './shared/shared.module';
 
 registerLocaleData(localePt);
 
@@ -44,7 +46,8 @@ registerLocaleData(localePt);
     ApresentationButtonComponent,
     HoverContentDirective,
     AnchorComponent,
-    ObserverChildDirective
+    ObserverChildDirective,
+    RepositoriesComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,8 @@ registerLocaleData(localePt);
     AppRoutingModule,
     HttpClientModule,
     LayoutModule,
-    MaterialModule
+    MaterialModule,
+    SharedModule
   ],
   providers: [
     MaterialProviders,

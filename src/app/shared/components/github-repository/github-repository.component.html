@@ -1,0 +1,30 @@
+<mat-card class="repository-container">
+  <mat-card-header>
+    <mat-card-title class="repository-title">{{ repository.name }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="data">
+      <div class="data-item">
+        <mat-icon>circle</mat-icon>
+        <span>{{ repository.language }}</span>
+      </div>
+      <div class="data-item">
+        <mat-icon>star</mat-icon>
+        <span>{{ repository.stargazers_count }}</span>
+      </div>
+      <div class="data-item">
+        <mat-icon>schedule</mat-icon>
+        <span>Updated at {{ repository.pushed_at | date }}</span>
+      </div>
+    </div>
+    <div class="description">
+      <p class="description-text" *ngIf="repository.description; else noDescription">{{ repository.description }}</p>
+      <ng-template #noDescription>
+        <p class="no-description">Empty description</p>
+      </ng-template>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <app-icon-button [button]="button" *ngFor="let button of buttons"></app-icon-button>
+  </mat-card-actions>
+</mat-card>

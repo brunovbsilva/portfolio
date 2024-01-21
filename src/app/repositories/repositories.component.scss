@@ -1,0 +1,33 @@
+.main-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  padding: 1rem 1rem;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  .repository {
+    width: 100%;
+    padding: 8px;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    padding: 1rem 2rem;
+    .repository {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-content {
+    padding: 1rem 4rem;
+  }
+}
