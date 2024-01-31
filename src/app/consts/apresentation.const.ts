@@ -1,6 +1,6 @@
 import { ApresentationButtonType, ApresentationModel } from "../main-page/models/apresentation.model";
 
-const years = new Date().getFullYear() - 2020;
+const years = new Date().getFullYear() - 2019;
 
 export const apresentationEN: ApresentationModel = {
     greatings: "Hello 👋 I'm Bruno",
