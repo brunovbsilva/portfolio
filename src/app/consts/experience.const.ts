@@ -14,7 +14,7 @@ export const experienceEN: ExperienceModel = {
         position: 'Fullstack Developer',
         company: 'Portway',
         description: 'Migration and support in a sales management system for multinational companies. The system was migrated from a monolithic architecture built on .NET Core MVC to a microservices architecture. It was developed using .NET Core, Angular, and SQL Server.',
-        startDate: new Date(2020, 10, 1),
+        startDate: new Date(2019, 10, 1),
         endDate: new Date(2022, 7, 1),
         skills: ['C#', 'Angular', 'Ionic', 'Git', 'SQL Server']
       },
@@ -35,7 +35,7 @@ export const experiencePT: ExperienceModel = {
         position: 'Desenvolvedor Fullstack',
         company: 'Portway',
         description: 'Migração e suporte em um sistema de gestão de vendas para empresas multinacionais. O sistema foi migrado de uma arquitetura monolítica construída em .NET Core MVC para uma arquitetura de microsserviços. Foi desenvolvido utilizando .NET Core, Angular e SQL Server.',
-        startDate: new Date(2020, 10, 1),
+        startDate: new Date(2019, 10, 1),
         endDate: new Date(2022, 7, 1),
         skills: ['C#', 'Angular', 'Ionic', 'Git', 'SQL Server']
       },

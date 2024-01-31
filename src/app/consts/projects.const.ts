@@ -31,6 +31,15 @@ export const projectsEN : ProjectsModel = {
         ]
       },
       {
+        title: "Signalr Chat",
+        description: "Example project of a real-time chat using SignalR. It was developed in C# and Angular, it is not hosted anywhere.",
+        imagePath: 'assets/images/signalr-chat.png',
+        buttons: [
+          { type: 'code', link: 'https://github.com/brunovbsilva/SignalRChat', tooltip: 'View back-end code' },
+          { type: 'code', link: 'https://github.com/brunovbsilva/signalr-chat', tooltip: 'View front-end code' },
+        ]
+      },
+      {
         title: "Portfolio",
         description: "This project is my personal portfolio. It was developed using Angular and Material Design. It is a SPA (Single Page Application) and is hosted on Github Pages.",
         imagePath: 'assets/images/portfolio.png',
@@ -70,6 +79,15 @@ export const projectsPT : ProjectsModel = {
         buttons: [
           { type: 'code', link: 'https://gitfront.io/r/brunovbsilva/h58r3DCZ9UpB/air-finder/', tooltip: 'Ver código back-end' },
           { type: 'code', link: 'https://gitfront.io/r/brunovbsilva/kDFY9r3UuLhW/angular-air-finder/', tooltip: 'Ver código front-end' },
+        ]
+      },
+      {
+        title: "Signalr Chat",
+        description: "Projeto de exemplo de um chat em tempo real utilizando SignalR. Foi desenvolvido em C# e Angular, não está hospedado em nenhum lugar.",
+        imagePath: 'assets/images/signalr-chat.png',
+        buttons: [
+          { type: 'code', link: 'https://github.com/brunovbsilva/SignalRChat', tooltip: 'Ver código back-end' },
+          { type: 'code', link: 'https://github.com/brunovbsilva/signalr-chat', tooltip: 'Ver código front-end' },
         ]
       },
       {
