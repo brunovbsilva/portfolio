@@ -9,6 +9,12 @@
     <button mat-button appAnchor goTo="experience" class="header-button">{{ header.experience }}</button>
     <button mat-button appAnchor goTo="skills" class="header-button">{{ header.skills }}</button>
 
+    <button class="language-button">
+      <img [src]="getCurrentLangIcon()"
+        [matTooltip]="getCurrentLang()"
+        (click)="toggleLang()">
+    </button>
+
     <button mat-icon-button [matMenuTriggerFor]="menu" class="menu"><mat-icon>more_vert</mat-icon></button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item appAnchor goTo="apresentation">{{ header.apresentation }}</button>
