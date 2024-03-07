@@ -68,4 +68,16 @@ export class MainPageComponent {
   public getHardSkillsResources(): HardSkillsModel {
     return this.lang == Language.enUS ? hardSkillsEN : hardSkillsPT;
   }
+
+  public toggleLang() {
+    this.lang = this.lang == Language.ptBR ? Language.enUS : Language.ptBR;
+  }
+
+  public getCurrentLangIcon() {
+    return 'assets/images/' + Language[this.lang] + '.png';
+  }
+
+  public getCurrentLang() {
+    return Language[this.lang];
+  }
 }

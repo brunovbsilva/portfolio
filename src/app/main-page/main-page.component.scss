@@ -17,6 +17,13 @@
     .menu {
       display: block;
     }
+    .language-button {
+      background: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      margin: 0 1rem;
+    }
   }
   #apresentation {
     display: flex;
